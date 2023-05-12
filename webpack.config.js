@@ -62,6 +62,10 @@ const config = () => ({
           'sass-loader',
         ],
       },
+      {
+        test: /\.(jpe?g|png|svg|webp)$/,
+        use: 'file-loader',
+      },
     ],
   },
   plugins: pluginsRes,
